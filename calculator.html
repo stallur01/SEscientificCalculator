@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Scientific Calculator</title>
+
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.calculator {
+    width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    height: 50px;
+
+    color: #000;
+    border: #000;
+    border-width:  1;
+    border-radius: 10px;
+    text-align: right;
+    padding: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.operation {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.number {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.function {
+    background-color: #f44336;
+    color: white;
+}
+
+.button-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: contents;
+}
+
+button {
+    /* ... existing button styles ... */
+    flex-grow: 1;
+}
+
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complex Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Complex Scientific Calculator</h1>
+        <div class="calculator">
+            <div id="display">0</div>
+            <div class="button-section">
+                <div class="row">
+                             <button class="function" onclick="clearAll()">AC</button>
+                    <button class="function" onclick="clearEntry()">C</button>
+                    <button class="operation" onclick="operate('+')">+</button>
+                    <button class="operation" onclick="scientificOperate('sqrt')">√</button>
+                    
+                    <button class="operation" onclick="operate('/')">/</button>
+                    
+                    <button class="operation" onclick="operate('')"></button>
+                    <button class="number" onclick="input('7')">7</button>
+                    <button class="number" onclick="input('8')">8</button>
+                    <button class="number" onclick="input('9')">9</button>
+           
+                    <button class="operation" onclick="operate('/')">/</button>
+                    <button class="operation" onclick="scientificOperate('%')">%</button>
+                </div>
+                <div class="row">
+         
+             
+                    <!-- <button class="operation" onclick="scientificOperate('sin')">sin</button>
+                    <button class="operation" onclick="scientificOperate('cos')">cos</button>
+                    <button class="operation" onclick="scientificOperate('tan')">tan</button> -->
+                </div>
+                <div class="row">
+               
+                
+                    <button class="operation" onclick="scientificOperate('sqrt')">√</button>
+                    <button class="number" onclick="input('4')">4</button>
+                    <button class="number" onclick="input('5')">5</button>
+                    <button class="number" onclick="input('6')">6</button>
+                    <button class="operation" onclick="scientificOperate('log')">log</button>
+                    
+                    <button class="operation" onclick="scientificOperate('exp')">exp</button>
+                    <button class="operation" onclick="calculate()">=</button>
+                    <button class="number" onclick="input('1')">1</button>
+                    <button class="number" onclick="input('2')">2</button>
+                    <button class="number" onclick="input('3')">3</button>
+                    <button class="number" onclick="input('0')">0</button>
+                    <button class="number" onclick="input('.')">.</button>
+                    <button class="operation" onclick="scientificOperate('^')">^</button>
+                 
+                </div>
+                <div class="row">
+                  
+                   
+
+          
+           
+
+                </div>
+   
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
